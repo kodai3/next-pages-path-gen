@@ -1,6 +1,6 @@
 {
   "name": "next-pages-path-gen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pages path generator for Next.js.",
   "author": "kodai <k3dai.su3@gmail.com>",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "bin": "bin/index.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
+    "release": "yarn build && npm publish",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
