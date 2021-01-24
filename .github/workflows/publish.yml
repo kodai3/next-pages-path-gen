@@ -33,7 +33,7 @@ jobs:
         run: yarn --frozen-lockfile
       # まだpublishされていないバージョンならpublishする
       - name: Publish
-        run: npx can-npm-publish --verbose && yarn release || echo "Does not publish"
+        run: npx can-npm-publish --verbose && yarn build && npm publish || echo "Does not publish"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       # まだtagがないバージョンなら、Git Tagをpushする
