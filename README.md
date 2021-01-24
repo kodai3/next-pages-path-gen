@@ -1,12 +1,17 @@
 # next-pages-path-gen
 
-CLI to generate pages path for Next.js.
+Generate pages path for Next.js.
 
 ## Install
 
 ```sh
 $ yarn add -D next-pages-path-gen
 ```
+
+```sh
+$ npm i -D next-pages-path-gen
+```
+you can not use with npx
 
 ## Setup
 
