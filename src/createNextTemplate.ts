@@ -9,7 +9,7 @@ const createMethods = (
   slugs: Slugs,
   pathname: string
 ) =>
-  `${indent}  $url: (url${importName?.startsWith('Query') ? '' : '?'}: { ${
+  `${indent}  $query: (url${importName?.startsWith('Query') ? '' : '?'}: { ${
     importName ? `query${importName.startsWith('Optional') ? '?' : ''}: ${importName}, ` : ''
   }hash?: string }) => ({ pathname: '${pathname}' as const${
     slugs.length

@@ -1,6 +1,6 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testPathIgnorePatterns: ['pages'],
-  coveragePathIgnorePatterns: ['pages', 'dist']
+  moduleFileExtensions: ['js', 'ts', 'tsx'],
+  testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)']
 }

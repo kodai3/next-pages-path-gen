@@ -10,7 +10,3 @@ updates:
     schedule:
       interval: "weekly"
     target-branch: "develop"
-    versioning-strategy: "increase"
-    commit-message:
-      prefix: "fix"
-      prefix-development: "chore"
