@@ -1,6 +1,6 @@
 # next-pages-path-gen
 
-automatically generate page path for Next.js.
+CLI to generate pages path for Next.js.
 
 ## Install
 
