@@ -1,5 +1,5 @@
 {
-  "name": "next-pages-path",
+  "name": "next-pages-path-gen",
   "version": "0.0.1",
   "description": "Pages path generator for Next.js.",
   "author": "kodai <k3dai.su3@gmail.com>",
@@ -15,13 +15,13 @@
     "lint:fix": "yarn lint -- --fix",
     "test": "jest"
   },
-  "homepage": "https://github.com/kodai3/next-pages-path#readme",
+  "homepage": "https://github.com/kodai3/next-pages-path-gen#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kodai3/next-pages-path.git"
+    "url": "git+https://github.com/kodai3/next-pages-path-gen.git"
   },
   "bugs": {
-    "url": "https://github.com/kodai3/next-pages-path/issues"
+    "url": "https://github.com/kodai3/next-pages-path-gen/issues"
   },
   "files": [
     "dist"

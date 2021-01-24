@@ -1,11 +1,11 @@
-# next-pages-path
+# next-pages-path-gen
 
 automatically generate page path for Next.js.
 
 ## Install
 
 ```sh
-$ yarn add -D next-pages-path
+$ yarn add -D next-pages-path-gen
 ```
 
 ## Setup
@@ -15,7 +15,7 @@ $ yarn add -D next-pages-path
 ```json
 {
   "scripts": {
-    "build:path": "next-pages-path"
+    "build:path": "next-pages-path-gen"
   }
 }
 ```
@@ -26,17 +26,17 @@ $ yarn add -D next-pages-path
 import Link from "next/link"
 import { pagesPath } from "../lib/path"
 
-console.log(pagesPath.post.create.getQuery()) // { pathname: '/post/create' }
-console.log(pagesPath.post._pid(1).getQuery()) // { pathname: '/post/[pid]', query: { pid: 1 }}
+console.log(pagesPath.post.create.$query()) // { pathname: '/post/create' }
+console.log(pagesPath.post._pid(1).$query()) // { pathname: '/post/[pid]', query: { pid: 1 }}
 
 export default () => {
   const onclick = useCallback(() => {
-    router.push(pagesPath.post._pid(1).getQuery())
+    router.push(pagesPath.post._pid(1).$query())
   }, [])
 
   return (
     <>
-      <Link href={pagesPath.post._pid(1).getQuery()} />
+      <Link href={pagesPath.post._pid(1).$query()} />
       <div onclick={onclick} />
     </>
   )
@@ -45,4 +45,4 @@ export default () => {
 
 ## License
 
-[MIT License](https://github.com/kodai3/next-pages-path/blob/master/LICENSE).
+[MIT License](https://github.com/kodai3/next-pages-path-gen/blob/master/LICENSE).
